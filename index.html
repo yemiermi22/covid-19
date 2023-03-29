@@ -109,7 +109,7 @@
           var deaths = document.getElementById('deaths');
 
           confirmed.innerHTML = 'Confirmed: ' + res[index].Confirmed;
-          recovered.innerHTML = 'recovered: ' + res[index].recovered;
+          recovered.innerHTML = 'recovered: ' + res[index].Recovered;
           deaths.innerHTML = 'Deaths: ' + res[index].Deaths;
 
         })
@@ -141,11 +141,7 @@ document.getElementById('plain').addEventListener('click', () => {
             inverted: false,
             polar: false
         },
-        subtitle: {
-            text: 'Chart option: Plain | Source: ' +
-                '<a href="https://www.nav.no/no/nav-og-samfunn/statistikk/arbeidssokere-og-stillinger-statistikk/helt-ledige"' +
-                'target="_blank">NAV</a>'
-        }
+        
     });
 });
 
@@ -155,11 +151,7 @@ document.getElementById('inverted').addEventListener('click', () => {
             inverted: true,
             polar: false
         },
-        subtitle: {
-            text: 'Chart option: Inverted | Source: ' +
-                '<a href="https://www.nav.no/no/nav-og-samfunn/statistikk/arbeidssokere-og-stillinger-statistikk/helt-ledige"' +
-                'target="_blank">NAV</a>'
-        }
+      
     });
 });
 
@@ -169,16 +161,16 @@ document.getElementById('polar').addEventListener('click', () => {
             inverted: false,
             polar: true
         },
-        subtitle: {
-            text: 'Chart option: Polar | Source: ' +
-                '<a href="https://www.nav.no/no/nav-og-samfunn/statistikk/arbeidssokere-og-stillinger-statistikk/helt-ledige"' +
-                'target="_blank">NAV</a>'
-        }
+       
+       
+       
     });
 });
 
 
-  </script>
+ 
+ 
+ </script>
        
 </body>
 </html>
